@@ -5,13 +5,40 @@ body {
 
 /* common styles */
 .text-primary {
-    text-align: center;
-    font-family: Mulish;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
+}
+
+.title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    transition: transform 1s 1s, background-color 3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.10) translate(12px);
+    background-color: rgb(255, 0, 0);
 }
 
 /* header's styles */
@@ -99,13 +126,14 @@ nav .menu-btn {
     font-weight: 800;
 }
 
-.banner-form{
+.banner-form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     gap: 30px;
 }
+
 .input {
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
@@ -122,6 +150,32 @@ nav .menu-btn {
     border-radius: 8px;
     background: #FF5400;
 }
+
+/* popular tours styles */
+.popular-tours-container {
+    max-width: 1170px;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.popular-tours-image img {
+    width: 100%;
+}
+
+.popular-tours-content ul {
+    margin: 24px 0 24px 0;
+}
+
+
+
 
 /* responsive site */
 @media screen and (max-width:576px) {
@@ -150,8 +204,14 @@ nav .menu-btn {
     nav .menu-btn {
         display: block;
     }
+
     /* banner  */
-    .banner-form{
+    .banner-form {
         flex-direction: column;
+    }
+    /* popular-tours */
+    .popular-tours-container{
+        flex-direction: column;
+        gap: 20px;
     }
 }
