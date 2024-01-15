@@ -301,12 +301,46 @@ nav .menu-btn {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* consumer-and-review's styles */
+.consumer-and-review {
+    max-width: 1170px;
+    margin: 120px auto;
+}
+
+.our-consumers {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.consumers-img {
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 1.5s ease;
+}
+
+.consumers-img:hover {
+    transform: scale(.90);
+    color: #FF5400;
+    box-shadow: 10px 10px 10px gainsboro;
+}
+
+.consumers-img img {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+
 /* news-letter's styles */
 .news-letter-container {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -343,12 +377,11 @@ nav .menu-btn {
     font-size: 20px;
     font-weight: 800;
 }
+
 .offer {
     position: relative;
-    top:-202px;
+    top: -202px;
     right: -340px;
-    /* width: 324px;
-    height: 120px; */
     width: 49%;
     transform: rotate(-19.628deg);
     flex-shrink: 0;
@@ -357,16 +390,16 @@ nav .menu-btn {
 }
 
 .offer-title {
-    
+
     color: #FFF;
     text-align: center;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .sub-title {
     padding: 4px;
-  text-align: center;
+    text-align: center;
     color: #FFF;
     font-size: 2rem;
     font-weight: 800;
@@ -423,6 +456,7 @@ nav .menu-btn {
             "img-7";
     }
 
+    /* choose */
     .reasons {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -431,25 +465,36 @@ nav .menu-btn {
         width: auto;
         margin: 24px auto;
     }
+
     /* newsletter */
-    .news-letter-container{
+    .news-letter-container {
         flex-direction: column;
     }
-    .image img{
+
+    .image img {
         width: 100%;
     }
-    .offer{
-        top:-140px;
+
+    .offer {
+        top: -140px;
         right: -175px;
     }
+
     .offer-title {
         padding: 0;
         font-size: 10px;
     }
-    .sub-title{
-font-size: 24px;
+
+    .sub-title {
+        font-size: 24px;
     }
+
     .news-letter-content {
         padding: 5px;
+    }
+
+    /* consumer-and-review*/
+    .our-consumers {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
