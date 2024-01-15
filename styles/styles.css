@@ -192,6 +192,7 @@ nav .menu-btn {
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(165, 159, 159);
 }
+
 .img-1 {
     position: relative;
     grid-area: img-1;
@@ -254,6 +255,52 @@ nav .menu-btn {
 
 }
 
+/* choose section's styles */
+.choose {
+    max-width: 1170px;
+    margin: 120px auto;
+}
+
+.reason-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    ;
+}
+
+.reason-1 {
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.reason-2 {
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.reason-3 {
+    width: 50%;
+    margin: 24px auto 0 auto;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.reasons {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* responsive site */
 @media screen and (max-width:576px) {
 
@@ -303,5 +350,12 @@ nav .menu-btn {
             "img-5"
             "img-6"
             "img-7";
+    }
+    .reasons{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reason-3{
+        width: auto;
+        margin: 24px auto;
     }
 }
