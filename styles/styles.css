@@ -301,6 +301,77 @@ nav .menu-btn {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* news-letter's styles */
+.news-letter-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+.news-letter-content {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.news-letter-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.news-letter-content form input {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.btn-subscribe {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.offer {
+    position: relative;
+    top:-202px;
+    right: -340px;
+    /* width: 324px;
+    height: 120px; */
+    width: 49%;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+}
+
+.offer-title {
+    
+    color: #FFF;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 400;
+}
+
+.sub-title {
+    padding: 4px;
+  text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 /* responsive site */
 @media screen and (max-width:576px) {
 
@@ -351,11 +422,34 @@ nav .menu-btn {
             "img-6"
             "img-7";
     }
-    .reasons{
+
+    .reasons {
         grid-template-columns: repeat(1, 1fr);
     }
-    .reason-3{
+
+    .reason-3 {
         width: auto;
         margin: 24px auto;
+    }
+    /* newsletter */
+    .news-letter-container{
+        flex-direction: column;
+    }
+    .image img{
+        width: 100%;
+    }
+    .offer{
+        top:-140px;
+        right: -175px;
+    }
+    .offer-title {
+        padding: 0;
+        font-size: 10px;
+    }
+    .sub-title{
+font-size: 24px;
+    }
+    .news-letter-content {
+        padding: 5px;
     }
 }
