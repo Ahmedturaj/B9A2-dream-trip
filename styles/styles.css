@@ -113,7 +113,31 @@ nav .menu-btn {
     align-items: center;
 }
 
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.banner-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-form {
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    padding: 16px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
 
 .dropdown {
     position: relative;
@@ -128,11 +152,13 @@ nav .menu-btn {
     border-radius: 8px;
     border: none;
     background: #FFF;
-   padding: 0 10px;
+    padding: 0 10px;
 }
-.dropdown .button img{
+
+.dropdown .button img {
     width: 25%;
 }
+
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
@@ -149,34 +175,12 @@ nav .menu-btn {
     color: #333;
 }
 
-/* Hover effect for time options */
 .dropdown .dropdown-content a:hover {
     background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.banner-title {
-    color: #FFF;
-    font-size: 64px;
-    font-weight: 800;
-}
-
-.banner-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 30px;
 }
 
 .input {
@@ -450,9 +454,11 @@ nav .menu-btn {
     font-size: 2rem;
     font-weight: 800;
 }
-.image img{
+
+.image img {
     margin-top: 100px;
 }
+
 /* footer's styles */
 footer {
     margin-top: 120px;
@@ -524,6 +530,9 @@ footer {
         flex-direction: column;
     }
 
+    .banner-form {
+        margin: 0 auto;
+    }
     /* popular-tours */
     .popular-tours-container {
         flex-direction: column;
@@ -587,5 +596,5 @@ footer {
     .our-consumers {
         grid-template-columns: repeat(1, 1fr);
     }
-   
+
 }
