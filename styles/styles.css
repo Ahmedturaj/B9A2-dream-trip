@@ -113,6 +113,51 @@ nav .menu-btn {
     align-items: center;
 }
 
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .button {
+    cursor: pointer;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    background: #FFF;
+   padding: 0 10px;
+}
+.dropdown .button img{
+    width: 25%;
+}
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hover effect for time options */
+.dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .banner-content {
     display: flex;
     align-items: center;
@@ -316,6 +361,7 @@ nav .menu-btn {
 }
 
 .consumers-img {
+    margin-top: 50px;
     border: 1px solid gainsboro;
     border-radius: 20px;
     padding: 10px;
@@ -338,9 +384,9 @@ nav .menu-btn {
 /* news-letter's styles */
 .news-letter-container {
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 120px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
@@ -403,6 +449,46 @@ nav .menu-btn {
     color: #FFF;
     font-size: 2rem;
     font-weight: 800;
+}
+.image img{
+    margin-top: 100px;
+}
+/* footer's styles */
+footer {
+    margin-top: 120px;
+    background: rgba(19, 19, 24, 0.05);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 25px;
+}
+
+.dream-footer {
+    max-width: 1170px;
+
+}
+
+.footer-title {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright {
+    color: #131318;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /* responsive site */
@@ -469,10 +555,13 @@ nav .menu-btn {
     /* newsletter */
     .news-letter-container {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .image img {
+        margin-top: 20px;
         width: 100%;
+        height: auto;
     }
 
     .offer {
@@ -490,6 +579,7 @@ nav .menu-btn {
     }
 
     .news-letter-content {
+        height: auto;
         padding: 5px;
     }
 
@@ -497,4 +587,5 @@ nav .menu-btn {
     .our-consumers {
         grid-template-columns: repeat(1, 1fr);
     }
+   
 }
