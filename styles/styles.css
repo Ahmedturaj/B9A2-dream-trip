@@ -381,7 +381,6 @@ nav .menu-btn {
 .consumers-img img {
     width: 100%;
     border-radius: 20px;
-    position: relative;
 }
 
 
@@ -484,6 +483,7 @@ footer {
 .social-media {
     display: flex;
     gap: 16px;
+    margin-top: 30px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
